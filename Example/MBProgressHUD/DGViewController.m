@@ -7,6 +7,7 @@
 //
 
 #import "DGViewController.h"
+#import "MBProgressHUD.h"
 
 @interface DGViewController ()
 

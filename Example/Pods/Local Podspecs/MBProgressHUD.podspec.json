@@ -1,0 +1,22 @@
+{
+  "name": "MBProgressHUD",
+  "version": "0.1.0",
+  "summary": "A short description of MBProgressHUD.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ZKSR/MBProgressHUD",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ZKSR": "dggzhongweidi@163.com"
+  },
+  "source": {
+    "git": "https://github.com/DGCody/MBProgressHUD.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MBProgressHUD/Classes/**/*"
+}
