@@ -18,7 +18,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.mode = MBProgressHUDModeFail;
+    hud.label.text = @"正在成功";
+    [hud showAnimated:YES];
+    [hud hideAnimated:YES afterDelay:5.0f];
 }
 
 - (void)didReceiveMemoryWarning

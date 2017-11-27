@@ -21,7 +21,7 @@
 CGFloat const MBProgressMaxOffset = 1000000.f;
 
 static const CGFloat MBDefaultPadding = 4.f;
-static const CGFloat MBDefaultLabelFontSize = 16.f;
+static const CGFloat MBDefaultLabelFontSize = 15.f;
 static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
 
 
@@ -405,7 +405,20 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
         if (mode == MBProgressHUDModeAnnularDeterminate) {
             [(MBRoundProgressView *)indicator setAnnular:YES];
         }
-    } 
+    }
+    else if (mode == MBProgressHUDModeFail && self.customView != indicator){
+        self.customView = [self customViewWithModel:mode];
+        [indicator removeFromSuperview];
+        indicator = self.customView;
+        [self.bezelView addSubview:indicator];
+    }
+    else if (mode == MBProgressHUDModeSuccess && self.customView != indicator){
+        self.customView = [self customViewWithModel:mode];
+        [indicator removeFromSuperview];
+        indicator = self.customView;
+        [self.bezelView addSubview:indicator];
+    }
+    
     else if (mode == MBProgressHUDModeCustomView && self.customView != indicator) {
         // Update custom view indicator
         [indicator removeFromSuperview];
@@ -429,6 +442,19 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
     [self updateViewsForColor:self.contentColor];
     [self setNeedsUpdateConstraints];
 }
+
+- (UIView *)customViewWithModel:(MBProgressHUDMode)model{
+    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    imageView.autoresizingMask = UIViewAutoresizingNone;
+    
+    if (model == MBProgressHUDModeFail) {
+        imageView.image = [UIImage imageNamed:@"失败"];
+    }else{
+        imageView.image = [UIImage imageNamed:@"成功"];
+    }
+    return imageView;
+}
+
 
 - (void)updateViewsForColor:(UIColor *)color {
     if (!color) return;
