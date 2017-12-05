@@ -1,9 +1,9 @@
 {
   "name": "MBProgressHUD",
   "version": "0.1.0",
-  "summary": "A short description of MBProgressHUD.",
+  "summary": "Extensions to MBProgressHUD",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/ZKSR/MBProgressHUD",
+  "homepage": "https://github.com/DGCody/MBProgressHUD",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
