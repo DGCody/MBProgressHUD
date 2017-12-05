@@ -20,7 +20,7 @@
     [super viewDidLoad];
 
     MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.mode = MBProgressHUDModeFail;
+    hud.mode = MBProgressHUDModeSuccess;
     hud.label.text = @"正在成功";
     [hud showAnimated:YES];
     [hud hideAnimated:YES afterDelay:5.0f];
