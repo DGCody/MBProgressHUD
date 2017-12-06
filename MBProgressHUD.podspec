@@ -31,15 +31,11 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'MBProgressHUD/Classes/*'
-
-  s.resource_bundles = 'MBProgressHUD/images.xcassets/**/*.png'
-
   s.public_header_files = 'MBProgressHUD/Classes/*.h'
 
-
-  # s.resource_bundles = {
-  #   'MBProgressHUD' => ['MBProgressHUD/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'MBProgressHUD' => ['MBProgressHUD/images.xcassets/**/*.png']
+   }
 
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
