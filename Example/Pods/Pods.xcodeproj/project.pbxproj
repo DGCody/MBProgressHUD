@@ -17,6 +17,8 @@
 		8406334C50D25B84ECC9FFEF4BF5A8DD /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB78419255F3CDBE1A55BF8C0CE147BD /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A8C75FD8E36ADEE16707040795B49CA /* Pods-MBProgressHUD_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 675C0DE747CAF4163768A692B647BACB /* Pods-MBProgressHUD_Example-dummy.m */; };
 		8F377DECA0F2754CE23B5747CA0EDEF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C367473F1FD77CA4003A208C /* images.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = C30666F21FD6A952006EA8C1 /* images.xcassets */; };
+		C36747411FD77DBE003A208C /* images.bundle in Sources */ = {isa = PBXBuildFile; fileRef = C367473E1FD77BA3003A208C /* images.bundle */; };
 		DC5C96A63439ACAFE6A3FEE3D5AD2777 /* Pods-MBProgressHUD_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A51DCFDF74BAE1EF55AF2658E57A986 /* Pods-MBProgressHUD_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,7 @@
 		BECE23547BB5DB1904B7AAD777333058 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
 		C073A994B9DCD85B21906D08B0EBC650 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
 		C30666F21FD6A952006EA8C1 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = MBProgressHUD/images.xcassets; sourceTree = "<group>"; };
+		C367473E1FD77BA3003A208C /* images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = images.bundle; sourceTree = "<group>"; };
 		C93AC03E0CE83CA146740732B69E6F87 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCBD33CE71CCA8E908D23B7D6D60B4EC /* Pods-MBProgressHUD_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MBProgressHUD_Tests.modulemap"; sourceTree = "<group>"; };
 		E427F151CC62F0FB7C36BFD375D887C1 /* Pods-MBProgressHUD_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MBProgressHUD_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -151,6 +154,7 @@
 				8F8FC09FD6E758347224A2DA49BBA1A1 /* MBProgressHUD.h */,
 				8AB3EBAEAF17CF3E715AD1D645F156CC /* MBProgressHUD.m */,
 				0BD2EBCFD28473388ED3873179B731C8 /* Support Files */,
+				C367473E1FD77BA3003A208C /* images.bundle */,
 			);
 			name = MBProgressHUD;
 			path = ../..;
@@ -335,6 +339,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36747411FD77DBE003A208C /* images.bundle in Sources */,
+				C367473F1FD77CA4003A208C /* images.xcassets in Sources */,
 				13BBEAC2762E757C77687B85CA7D26C8 /* MBProgressHUD-dummy.m in Sources */,
 				64AE2D20AABBFE804A3D963FEF7DE415 /* MBProgressHUD.m in Sources */,
 			);

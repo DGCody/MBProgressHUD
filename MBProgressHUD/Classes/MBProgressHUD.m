@@ -446,11 +446,10 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
 - (UIView *)customViewWithModel:(MBProgressHUDMode)model{
     UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
     imageView.autoresizingMask = UIViewAutoresizingNone;
-    
     if (model == MBProgressHUDModeFail) {
-        imageView.image = [UIImage imageNamed:@"失败"];
-    }else{
         imageView.image = [UIImage imageNamed:@"成功"];
+    }else{
+        imageView.image = [UIImage imageNamed:@"失败"];
     }
     return imageView;
 }

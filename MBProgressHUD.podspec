@@ -30,9 +30,9 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'MBProgressHUD/Classes/*','MBProgressHUD/images.xcassets/**/*.png'
+  s.source_files = 'MBProgressHUD/Classes/*'
 
-  s.resources = 'MBProgressHUD/images.xcassets/**/*.png'
+  s.resource_bundles = 'MBProgressHUD/images.xcassets/**/*.png'
 
   s.public_header_files = 'MBProgressHUD/Classes/*.h'
 
